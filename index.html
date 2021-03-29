@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Quote Generator</title>
+    <link rel="icon" href="https://www.google.com/s2/u/0/favicons?domain=srbooks.in">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+       
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+ 
+ html{
+     box-sizing: border-box;
+ }
+
+ body{
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1015%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(229%2c 229%2c 229%2c 1)'%3e%3c/rect%3e%3cpath d='M1166 231L1165 502' stroke-width='6' stroke='url(%23SvgjsLinearGradient1016)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M813 425L812 41' stroke-width='8' stroke='url(%23SvgjsLinearGradient1016)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1231 545L1230 341' stroke-width='8' stroke='url(%23SvgjsLinearGradient1017)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1186 45L1185 -198' stroke-width='10' stroke='url(%23SvgjsLinearGradient1016)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1111 193L1110 -89' stroke-width='8' stroke='url(%23SvgjsLinearGradient1017)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M483 488L482 850' stroke-width='10' stroke='url(%23SvgjsLinearGradient1017)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1309 529L1308 221' stroke-width='6' stroke='url(%23SvgjsLinearGradient1016)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1007 532L1006 170' stroke-width='10' stroke='url(%23SvgjsLinearGradient1016)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M150 95L149 466' stroke-width='10' stroke='url(%23SvgjsLinearGradient1017)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1165 9L1164 180' stroke-width='6' stroke='url(%23SvgjsLinearGradient1016)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1324 333L1323 129' stroke-width='10' stroke='url(%23SvgjsLinearGradient1016)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M842 290L841 -7' stroke-width='6' stroke='url(%23SvgjsLinearGradient1016)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1061 483L1060 633' stroke-width='6' stroke='url(%23SvgjsLinearGradient1017)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1019 449L1018 269' stroke-width='6' stroke='url(%23SvgjsLinearGradient1017)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M305 289L304 655' stroke-width='10' stroke='url(%23SvgjsLinearGradient1016)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1305 413L1304 699' stroke-width='6' stroke='url(%23SvgjsLinearGradient1016)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1398 199L1397 18' stroke-width='10' stroke='url(%23SvgjsLinearGradient1016)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M237 420L236 133' stroke-width='8' stroke='url(%23SvgjsLinearGradient1016)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1367 319L1366 -13' stroke-width='10' stroke='url(%23SvgjsLinearGradient1017)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M725 71L724 -170' stroke-width='10' stroke='url(%23SvgjsLinearGradient1017)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M275 218L274 538' stroke-width='10' stroke='url(%23SvgjsLinearGradient1016)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M20 95L19 298' stroke-width='6' stroke='url(%23SvgjsLinearGradient1016)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M806 93L805 -244' stroke-width='6' stroke='url(%23SvgjsLinearGradient1017)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1227 118L1226 -113' stroke-width='8' stroke='url(%23SvgjsLinearGradient1017)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M380 200L379 -26' stroke-width='8' stroke='url(%23SvgjsLinearGradient1017)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1426 178L1425 434' stroke-width='10' stroke='url(%23SvgjsLinearGradient1016)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1010 326L1009 570' stroke-width='10' stroke='url(%23SvgjsLinearGradient1016)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1166 460L1165 682' stroke-width='8' stroke='url(%23SvgjsLinearGradient1016)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M751 75L750 -108' stroke-width='8' stroke='url(%23SvgjsLinearGradient1017)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M780 260L779 485' stroke-width='6' stroke='url(%23SvgjsLinearGradient1017)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M144 20L143 -347' stroke-width='6' stroke='url(%23SvgjsLinearGradient1017)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1429 196L1428 -150' stroke-width='10' stroke='url(%23SvgjsLinearGradient1016)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M480 449L479 862' stroke-width='8' stroke='url(%23SvgjsLinearGradient1016)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M734 360L733 153' stroke-width='6' stroke='url(%23SvgjsLinearGradient1016)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M228 107L227 -41' stroke-width='8' stroke='url(%23SvgjsLinearGradient1016)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1366 288L1365 454' stroke-width='10' stroke='url(%23SvgjsLinearGradient1017)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1015'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1016'%3e%3cstop stop-color='rgba(207%2c 207%2c 207%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(207%2c 207%2c 207%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='0%25' y1='0%25' x2='0%25' y2='100%25' id='SvgjsLinearGradient1017'%3e%3cstop stop-color='rgba(207%2c 207%2c 207%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(207%2c 207%2c 207%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ 
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+ .quote-container{
+     width: auto;
+     max-width: 900px;
+     padding: 20px 30px;
+     border-radius: 10px;
+     background-color: rgba(255, 255,255, 0.4);
+     box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+ }
+
+ .quote-text{
+     font-size: 2.75rem;
+ }
+
+ .long-quote{
+     font-size: 2rem;
+ }
+
+ .fa-quote-left.fa-quote-right{
+    font-size: 4rem;
+ }
+
+ .quote-author{
+     margin-top: 15px;
+     font-size: 2rem;
+     font-weight: 400;
+     font-style: italic;
+ }
+
+ button{
+     cursor: pointer;
+     font-size: 1.2rem;
+     height: 2.5rem;
+     border: none;
+     border-radius: 10px;
+     color: white;
+     background-color: #333;
+     outline: none;
+     padding: 0.5rem 1.8rem;
+     box-shadow: 0 0.3rem rgba(121,121,121, 0.65);
+ }
+
+ .button-container{
+     margin-top: 15px;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ button:hover{
+     filter: brightness(110%);
+ }
+ button:active{
+     transform: translate(0, 0.3rem); /* Andar ghusa dalega */
+     box-shadow: 0 0.1rem rgba(255, 255,255, 0.65);
+
+ }
+
+ .twitter-button:hover{
+     color: #38a1f3;
+ }
+
+ .fa-twitter{
+     font-size: 1.5rem;
+ }
+
+ /* Loader */
+
+ .loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #333; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+
+ /* Media Query */
+ @media screen and (max-width:1000px) {
+     .quote-container{
+         margin: auto 10px;
+     }
+     .quote-text{
+         font-size: 2.5rem;
+     }
+ }
+    </style>
+  </head>
+  <body>
+
+    <div class="quote-container" id="quote-container">
+      <!-- Quote -->
+      <div class="quote-text">
+        <i class="fas fa-quote-left"></i>
+        <span id="quote"></span>
+        <i class="fas fa-quote-right"></i>
+      </div>
+      <!-- Author -->
+      <div class="quote-author">
+        <span class="" id="author"></span>
+      </div>
+
+      <!-- buttons -->
+      <div class="button-container">
+        <button class="twitter-button" id="twitter" title="Tweet this">
+          <i class="fab fa-twitter"></i>
+        </button>
+        <button id="new-quote">New Quote</button>
+      </div>
+    </div>
+
+    <div class="loader" id="loader"></div>
+
+
+    <script>
+      const quoteContainer = document.getElementById("quote-container");
+const quoteText = document.getElementById("quote");
+const twitterBtn = document.getElementById("twitter");
+const newQuoteBtn = document.getElementById("new-quote");
+const authorText = document.getElementById("author");
+const loader = document.getElementById('loader');
+
+
+let apiQuotes = [];
+//show loading
+
+function loading() {
+    loader.hidden = false;
+    quoteContainer.hidden = true;
+}
+
+//hide loading when function is complete
+function complete() {
+    quoteContainer.hidden = false;
+    loader.hidden = true;
+}
+
+// Show new Qoute
+function newQuote(){
+    loading();
+
+    const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
+    authorText.textContent = quote.author;
+    
+    if (!quote.author){
+        authorText.textContent = 'Anonymous';
+    }else{
+        authorText.textContent = quote.author;
+    }
+
+    if(quote.text.length > 100){
+        quoteText.classList.add('long-quote');
+    }else{
+        quoteText.classList.remove('long-quote');
+    }
+    complete();
+
+    quoteText.textContent = quote.text;
+
+}
+
+// API call
+// ansync function can run at any time independently and it wont stop the broweser for loading up a page. 
+async function getQuotes(){
+    loading();
+
+    const apiUrl = "https://type.fit/api/quotes";
+    try{
+        const response = await fetch(apiUrl); //this means response will not be populated until it fetched some data from the url.
+        apiQuotes = await response.json();
+        newQuote();
+    } catch(error){
+        // catch eror here
+    }
+}
+
+
+// Tweet a quote
+function tweetQuote(){
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`;
+    window.open(twitterUrl, '_blank');//helps to open twitter window in a new tab.
+}
+
+// Event Listerner
+newQuoteBtn.addEventListener('click',newQuote);
+twitterBtn.addEventListener('click', tweetQuote);
+
+
+// onload
+getQuotes();
+
+
+    </script>
+  </body>
+</html>
